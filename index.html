@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="jp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div
+      class="c-carousel swiper js-carousel"
+      id="slider1"
+      role="group"
+      aria-roledescription="スライダー"
+      aria-label="記事のスライダー"
+    >
+      <div class="c-carousel__slides swiper-wrapper">
+        <div
+          class="c-carousel__slide swiper-slide"
+          aria-roledescription="スライド"
+        >
+          <a href="#">記事 その1</a>
+        </div>
+        <div
+          class="c-carousel__slide swiper-slide"
+          aria-roledescription="スライド"
+        >
+          <a href="#">記事 その2</a>
+        </div>
+        <div
+          class="c-carousel__slide swiper-slide"
+          aria-roledescription="スライド"
+        >
+          <a href="#">記事 その3</a>
+        </div>
+        <div
+          class="c-carousel__slide swiper-slide"
+          aria-roledescription="スライド"
+        >
+          <a href="#">記事 その4</a>
+        </div>
+        <div
+          class="c-carousel__slide swiper-slide"
+          aria-roledescription="スライド"
+        >
+          <a href="#">記事 その5</a>
+        </div>
+        <div
+          class="c-carousel__slide swiper-slide"
+          aria-roledescription="スライド"
+        >
+          <a href="#">記事 その6</a>
+        </div>
+        <div
+          class="c-carousel__slide swiper-slide"
+          aria-roledescription="スライド"
+        >
+          <a href="#">記事 その7</a>
+        </div>
+        <div
+          class="c-carousel__slide swiper-slide"
+          aria-roledescription="スライド"
+        >
+          <a href="#">記事 その8</a>
+        </div>
+        <div
+          class="c-carousel__slide swiper-slide"
+          aria-roledescription="スライド"
+        >
+          <a href="#">記事 その9</a>
+        </div>
+      </div>
+      <div
+        class="c-carousel__navigation"
+        role="group"
+        aria-roledescription="ナビゲーション"
+        aria-label="ナビゲーション"
+      >
+        <button class="swiper-button-prev js-carousel-previous"></button>
+        <button class="swiper-button-next js-carousel-next"></button>
+      </div>
+      <div class="c-carousel__controls">
+        <div
+          class="c-carousel__pagination swiper-pagination js-carousel-pagination"
+          role="group"
+          aria-roledescription="ページネーション"
+          aria-label="ページネーション"
+        ></div>
+        <div
+          class="c-carousel__autoplay"
+          role="group"
+          aria-roledescription="再生・停止ボタン"
+          aria-label="再生・停止ボタン"
+        >
+          <button
+            class="c-carousel__autoplay-button js-carousel-autoplay-button"
+            data-status="start"
+          >
+            再生
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+      const { initCarousel } = useCarousel();
+      document.addEventListener('DOMContentLoaded', () => {
+        initCarousel();
+      });
+    </script>
+  </body>
+</html>

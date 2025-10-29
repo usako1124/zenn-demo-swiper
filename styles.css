@@ -1,0 +1,40 @@
+.c-carousel {
+  position: relative;
+}
+.c-carousel .swiper-slide {
+  width: 353px;
+  height: 300px;
+  padding: 16px;
+  background-color: #ccc;
+}
+.c-carousel .swiper-pagination {
+  position: relative;
+  top: auto;
+  bottom: auto;
+  left: auto;
+  display: flex;
+  gap: 8px;
+  width: auto;
+  margin: 0;
+}
+.c-carousel .swiper-pagination-bullet {
+  margin: 0;
+  width: 24px;
+  height: 24px;
+}
+.c-carousel__controls {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-top: 8px;
+}
+.c-carousel__live-region {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+}
